@@ -1,9 +1,11 @@
 const validateBody = require("./validateBody");
-const handleSaveErrors = require("./handleSaveErrors");
+// const handleSaveErrors = require("../helpers/handleSaveErrors");
 const isValidId = require("./isValidId");
+const authenticate = require("./authenticate");
 
 module.exports = {
   validateBody,
-  handleSaveErrors,
+  // handleSaveErrors,
   isValidId,
+  authenticate,
 };

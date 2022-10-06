@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const Joi = require("joi");
 
-const { handleSaveErrors } = require("../middlewares");
+const { handleSaveErrors } = require("../helpers");
 
 const userSchema = new Schema(
   {
