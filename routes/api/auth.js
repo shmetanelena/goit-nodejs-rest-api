@@ -26,4 +26,11 @@ router.get("/current", authenticate, ctrlWrapper(ctrl.getCurrent));
 
 router.get("/logout", authenticate, ctrlWrapper(ctrl.logout));
 
+router.patch(
+  "/subscription",
+  authenticate,
+  validateBody(schemas.updateSubscriptionSchema),
+  ctrlWrapper(ctrl.updateSubscription)
+);
+
 module.exports = router;
