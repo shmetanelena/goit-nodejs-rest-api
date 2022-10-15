@@ -2,7 +2,6 @@ const fs = require("fs/promises");
 const path = require("path");
 
 const { User } = require("../../models/user");
-const { patch } = require("../../routes/api/auth");
 
 const avatarsDir = path.join(__dirname, "../../", "public", "avatars");
 
